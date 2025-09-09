@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Production Ready](https://img.shields.io/badge/status-production--ready-green.svg)]()
 
-A production-ready WebSocket bot framework that integrates with OpenAI's Realtime API for high-quality voice conversations. Optimized for telephony providers like Exotel, Twilio, and others.
+A production-ready WebSocket bot framework that integrates with OpenAI's Realtime API for high-quality voice conversations. Optimized for Exotel AgentStream voice streaming platform.
 
 ## Features
 
@@ -13,7 +13,7 @@ A production-ready WebSocket bot framework that integrates with OpenAI's Realtim
 - **High-Quality Audio**: 24kHz processing with automatic upsampling
 - **Production Architecture**: Scalable, secure, and monitored
 - **Multiple Bot Types**: Sales, Support, Qualification, Collection bots
-- **Telephony Integration**: Ready for Exotel, Twilio, and other providers
+- **Exotel AgentStream Integration**: Native support for Exotel's voice streaming platform
 - **Real-time Processing**: Low-latency voice conversations
 - **Robust Error Handling**: Comprehensive logging and monitoring
 - **Docker Support**: Containerized deployment ready
@@ -121,8 +121,44 @@ Response (24kHz) ← Telephony Provider ← Downsampling ← OpenAI Response
 
 - Python 3.8 or higher
 - OpenAI API key with Realtime API access
-- Telephony provider account (Exotel, Twilio, etc.)
+- Exotel AgentStream account with voice streaming enabled
 - ngrok or similar tunneling service (for development)
+
+## Exotel AgentStream Integration
+
+This framework is optimized for [Exotel AgentStream](https://exotel.com/products/agentstream-voice-streaming/), a voice streaming platform that enables real-time AI bot conversations over PSTN and digital channels.
+
+### Key Features:
+- **Ultra-Low Latency**: <20ms voice streaming
+- **HD Audio Quality**: 24kHz audio streaming (Beta)
+- **99.99% Session Success**: Enterprise-grade reliability
+- **Elastic Scaling**: 0 to millions of concurrent calls
+- **99.95% Uptime**: Production-ready infrastructure
+
+### Documentation References:
+- **Product Overview**: [Exotel AgentStream](https://exotel.com/products/agentstream-voice-streaming/)
+- **API Documentation**: [Voice API Reference](https://developer.exotel.com/api/make-a-call-api)
+- **Support Resources**: [Exotel Support Center](https://support.exotel.com/support/solutions/folders/3000023566)
+
+### Supported Use Cases:
+- **Collections**: Voice bots for payment recovery
+- **Sales**: AI agents for lead qualification and conversion
+- **Support**: Automated customer service bots
+- **Service**: Always-on voice support for routine queries
+
+### Exotel Setup Guide:
+
+1. **Create Exotel Account**: Sign up at [Exotel AgentStream](https://exotel.com/products/agentstream-voice-streaming/)
+2. **Enable Voice Streaming**: Contact Exotel support to enable AgentStream features
+3. **Get Your Number**: Use Exotel's sandbox to get a test number
+4. **Configure Webhook**: Point your Exotel webhook to your bot's WebSocket endpoint
+5. **Test Integration**: Use the provided examples to test voice streaming
+
+### Audio Format Requirements:
+- **Default**: PCM 16-bit, 16kHz (standard telephony)
+- **HD Quality**: PCM 24kHz (Beta - contact Exotel for access)
+- **Channels**: Mono (single channel)
+- **Encoding**: Linear PCM, little-endian
 
 ### Development Setup
 
