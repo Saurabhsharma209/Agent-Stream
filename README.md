@@ -139,6 +139,8 @@ This framework is optimized for [Exotel AgentStream](https://exotel.com/products
 - **Product Overview**: [Exotel AgentStream](https://exotel.com/products/agentstream-voice-streaming/)
 - **API Documentation**: [Voice API Reference](https://developer.exotel.com/api/make-a-call-api)
 - **Support Resources**: [Exotel Support Center](https://support.exotel.com/support/solutions/folders/3000023566)
+- **AI Terms of Service**: [Exotel AI Terms](https://exotel.com/ai-terms-of-service/)
+- **Platform Terms**: [Exotel Terms of Service](https://exotel.com/terms-of-service-exotel/)
 
 ### Supported Use Cases:
 - **Collections**: Voice bots for payment recovery
@@ -159,6 +161,12 @@ This framework is optimized for [Exotel AgentStream](https://exotel.com/products
 - **HD Quality**: PCM 24kHz (Beta - contact Exotel for access)
 - **Channels**: Mono (single channel)
 - **Encoding**: Linear PCM, little-endian
+
+### Legal Compliance:
+By using this framework with Exotel AgentStream, you agree to comply with:
+- [Exotel AI Terms of Service](https://exotel.com/ai-terms-of-service/)
+- [Exotel Platform Terms of Service](https://exotel.com/terms-of-service-exotel/)
+- All applicable data protection and privacy regulations
 
 ### Development Setup
 
